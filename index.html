@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Takeaway&Delivery</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__descr">
+            <div class="container">
+                <div class="header__info">
+                    <div class="header__info-open">We're open and available for takeaway & delivery.</div>
+                    <a class="header__info-order" href="#">Order now</a>
+                </div>
+            </div>
+        </div>
+        <div class="header__top">
+            <div class="container">
+                <div class="header__menu">
+                    <a class="header__logo logo" href="#">
+                        <img src="images/logo.svg" alt="logo img">
+                    </a>
+                    <div class="header__nav">
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <a class="header__item-link header__item-link--active" href="#">Home</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__item-link" href="#">Order</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__item-link" href="#">Company</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__item-link" href="#">FAQ</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__item-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                        <button class="menu__button">
+                            <?xml version="1.0" encoding="UTF-8"?>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="18" viewBox="0 0 30 18"
+                                fill="none">
+                                <path d="M0 0H30V2H0V0Z" fill="black"></path>
+                                <path d="M0 8H30V10H0V8Z" fill="black"></path>
+                                <rect y="16" width="30" height="2" fill="black"></rect>
+                            </svg>
+                        </button>
+                        <div class="header__cart">
+                            <img src="images/cart.svg" alt="cart icon">
+                            <div class="header__cart-qty">0</div>
+                        </div>
+                    </div>
+                </div>
+                <div data-card class="card none">
+                    <div class="card__inner">
+                        <h2 class="card__title title">Your Order</h2>
+                        <div data-cart-empty class="card__empty">Cart is empty</div>
+                        <div class="card-wrapper">
+
+                        </div>
+                        <button data-remove class="card-item__btn" style="display: none;">Remove</button>
+                        <div class="card__total">
+                            <p id="card-delivery" class="card__total-text none">
+                                <span class="card__total-delivery">Delivery:</span>
+                                <span class="card-total__price">4.99</span>
+                            </p>
+                            <p class="card__total-text">
+                                <span class="card__total-all">Total:</span> <span class="card-total__price--all">$ 0
+                                    USD</span>
+                            </p>
+                        </div>
+                        <div id="order-form" class="order__total none">
+                            <h5 class="order__title">Checkout</h5>
+                            <form class="order__form">
+                                <div class="form__group">
+                                    <input id="phone-mask" type="tel" class="form__input" placeholder="+48">
+                                </div>
+                                <button class="form__btn">Buy</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__content">
+            <div class="container">
+                <div class="header__items">
+                    <div class="header__items-descr">
+                        <h2 class="header__items-title">
+                            Beautiful food & takeaway, <span>delivered</span> to your door.
+                        </h2>
+                        <div class="header__items-text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500.
+                        </div>
+                        <button class="header__items-btn btn">Place an Order</button>
+                        <div class="header__items-reviews">
+                            <img class="header__items-icon" src="images/trustpilot-logo.svg" alt="trustpilot icon">
+                            <span>4.8 out of 5</span> based on 2000+ reviews
+                        </div>
+                    </div>
+                    <div class="header__items-img">
+                        <img src="images/food.png" alt="food img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="about">
+        <div class="container">
+            <div class="about__content">
+                <div class="about__inner">
+                    <h3 class="about__inner-title title">The home of fresh products</h3>
+                    <div class="about__inner-text">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500.
+                    </div>
+                    <button class="about__inner-btn btn">Learn about us</button>
+                </div>
+                <img class="about__content-img" src="images/client-food.png" alt="content img">
+            </div>
+        </div>
+    </section>
+    <section class="works">
+        <div class="container">
+            <h2 class="works__title title">How it works.</h2>
+            <div class="works__inner">
+                <div class="works__item">
+                    <div class="works__item-img">
+                        <img src="images/works/menu.jpg" alt="menu icon">
+                    </div>
+                    <h6 class="works__item-title">Adapt your menu items</h6>
+                    <p class="works__item-descr">
+                        Easily adapt your menu using the webflow CMS and allow customers to browse your items.
+                    </p>
+                </div>
+                <div class="works__item works__item-line">
+                    <div class="works__item-img">
+                        <img src="images/works/accept.jpg" alt="accept icon">
+                    </div>
+                    <h6 class="works__item-title">Accept online orders & takeout</h6>
+                    <p class="works__item-descr">
+                        Let your customers order and pay via the powerful ecommerce system, or simple let them call your
+                        store.
+                    </p>
+                </div>
+                <div class="works__item">
+                    <div class="works__item-img">
+                        <img src="images/works/deliver.jpg" alt="deliver icon">
+                    </div>
+                    <h6 class="works__item-title">Manage delivery or takeout</h6>
+                    <p class="works__item-descr">Manage your own logistics and take orders simply through the ecommerce
+                        system.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product">
+        <div class="container">
+            <h2 class="product__title title">Browse our menu</h2>
+            <div class="product__subtitle">
+                Use our menu to place an order online, or <span>phone</span> our store to place a pickup order. Fast and
+                fresh food.
+            </div>
+            <div class="product__tabs">
+                <button class="product__tab product__tab-active is-active" data-tab-name="tab-1">Burgers</button>
+                <button class="product__tab" data-tab-name="tab-2">Sides</button>
+                <button class="product__tab" data-tab-name="tab-3">Drinks</button>
+            </div>
+            <div class="product__content tab-1 is-active">
+                <div class="product__menu" data-it="01">
+                    <img class="product__menu-img" src="images/menu/1.jpg" alt="product icon">
+                    <div class="product__menu-item">
+                        <div class="product__menu-box">
+                            <div class="product__menu-name">Burger Dreams</div>
+                            <div class="product__card">
+                                <div class="product-span">$</div>
+                                <div class="product__menu-price">9.20</div>
+                                <div class="product-span">USD</div>
+                            </div>
+                        </div>
+                        <div class="product__menu-text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </div>
+                        <div class="product__menu-qty">
+                            <div class="product__menu-counter card__wrapper">
+                                <div class="product__menu-control product__menu-control--minus" data-action="minus">
+                                    -</div>
+                                <div class="product__menu-current" data-counter>1</div>
+                                <div class="product__menu-control product__menu-control--plus" data-action="plus">+
+                                </div>
+                            </div>
+                            <button data-cart type="button" class="product__menu-btn card-btn">Add to card</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product__menu" data-id="02">
+                    <img class="product__menu-img" src="images/menu/2.jpg" alt="product icon">
+                    <div class="product__menu-item">
+                        <div class="product__menu-box">
+                            <div class="product__menu-name">Burger Cali</div>
+                            <div class="product__card">
+                                <div class="product-span">$</div>
+                                <div class="product__menu-price">8.00</div>
+                                <div class="product-span">USD</div>
+                            </div>
+                        </div>
+                        <div class="product__menu-text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </div>
+                        <div class="product__menu-qty">
+                            <div class="product__menu-counter card__wrapper">
+                                <div class="product__menu-control product__menu-control--minus" data-action="minus">
+                                    -</div>
+                                <div class="product__menu-current" data-counter>1</div>
+                                <div class="product__menu-control product__menu-control--plus" data-action="plus">+
+                                </div>
+                            </div>
+                            <button data-cart class="product__menu-btn">Add to card</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product__menu" data-id="03">
+                    <img class="product__menu-img" src="images/menu/3.jpg" alt="product icon">
+                    <div class="product__menu-item">
+                        <div class="product__menu-box">
+                            <div class="product__menu-name">Burger Spicy</div>
+                            <div class="product__card">
+                                <div class="product-span">$</div>
+                                <div class="product__menu-price">9.20</div>
+                                <div class="product-span">USD</div>
+                            </div>
+                        </div>
+                        <div class="product__menu-text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </div>
+                        <div class="product__menu-qty">
+                            <div class="product__menu-counter card__wrapper">
+                                <div class="product__menu-control product__menu-control--minus" data-action="minus">
+                                    -</div>
+                                <div class="product__menu-current" data-counter>1</div>
+                                <div class="product__menu-control product__menu-control--plus" data-action="plus">+
+                                </div>
+                            </div>
+                            <button data-cart class="product__menu-btn">Add to card</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product__menu" data-id="04">
+                    <img class="product__menu-img" src="images/menu/4.jpg" alt="product icon">
+                    <div class="product__menu-item">
+                        <div class="product__menu-box">
+                            <div class="product__menu-name">Burger Waldo</div>
+                            <div class="product__card">
+                                <div class="product-span">$</div>
+                                <div class="product__menu-price">10.00</div>
+                                <div class="product-span">USD</div>
+                            </div>
+                        </div>
+                        <div class="product__menu-text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </div>
+                        <div class="product__menu-qty">
+                            <div class="product__menu-counter card__wrapper">
+                                <div class="product__menu-control product__menu-control--minus" data-action="minus">
+                                    -</div>
+                                <div class="product__menu-current" data-counter>1</div>
+                                <div class="product__menu-control product__menu-control--plus" data-action="plus">+
+                                </div>
+                            </div>
+                            <button data-cart class="product__menu-btn">Add to card</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product__menu" data-id="05">
+                    <img class="product__menu-img" src="images/menu/5.jpg" alt="product icon">
+                    <div class="product__menu-item">
+                        <div class="product__menu-box">
+                            <div class="product__menu-name">Burger Bacon Buddy</div>
+                            <div class="product__card">
+                                <div class="product-span">$</div>
+                                <div class="product__menu-price">9.99</div>
+                                <div class="product-span">USD</div>
+                            </div>
+                        </div>
+                        <div class="product__menu-text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </div>
+                        <div class="product__menu-qty">
+                            <div class="product__menu-counter card__wrapper">
+                                <div class="product__menu-control product__menu-control--minus" data-action="minus">
+                                    -</div>
+                                <div class="product__menu-current" data-counter>1</div>
+                                <div class="product__menu-control product__menu-control--plus" data-action="plus">+
+                                </div>
+                            </div>
+                            <button data-cart class="product__menu-btn">Add to card</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product__menu" data-id="06">
+                    <img class="product__menu-img" src="images/menu/6.jpg" alt="product icon">
+                    <div class="product__menu-item">
+                        <div class="product__menu-box">
+                            <div class="product__menu-name">Burger Classic</div>
+                            <div class="product__card">
+                                <div class="product-span__dollar">$</div>
+                                <div class="product__menu-price">8.20</div>
+                                <div class="product-span__usd">USD</div>
+                            </div>
+                        </div>
+                        <div class="product__menu-text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </div>
+                        <div class="product__menu-qty">
+                            <div class="product__menu-counter card__wrapper">
+                                <div class="product__menu-control" data-action="minus">
+                                    -</div>
+                                <div class="product__menu-current" data-counter>1</div>
+                                <div class="product__menu-control" data-action="plus">+
+                                </div>
+                            </div>
+                            <button data-cart class="product__menu-btn">Add to card</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__more">
+                    <div class="card__more-block">
+                        <div class="product__menu product__menu-more" data-id="01">
+                            <img class="product__menu-img" src="images/menu/1.jpg" alt="product icon">
+                            <div class="product__menu-item">
+                                <div class="product__menu-box">
+                                    <div class="product__menu-name">Burger Classic</div>
+                                    <div class="product__card">
+                                        <div class="product-span__dollar">$</div>
+                                        <div class="product__menu-price">8.20</div>
+                                        <div class="product-span__usd">USD</div>
+                                    </div>
+                                </div>
+                                <div class="product__menu-text">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                </div>
+                                <div class="product__menu-qty">
+                                    <div class="product__menu-counter card__wrapper">
+                                        <div class="product__menu-control" data-action="minus">
+                                            -</div>
+                                        <div class="product__menu-current" data-counter>1</div>
+                                        <div class="product__menu-control" data-action="plus">+
+                                        </div>
+                                    </div>
+                                    <button data-cart class="product__menu-btn">Add to card</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__menu product__menu-more" data-id="03">
+                            <img class="product__menu-img" src="images/menu/3.jpg" alt="product icon">
+                            <div class="product__menu-item">
+                                <div class="product__menu-box">
+                                    <div class="product__menu-name">Burger Classic</div>
+                                    <div class="product__card">
+                                        <div class="product-span__dollar">$</div>
+                                        <div class="product__menu-price">8.20</div>
+                                        <div class="product-span__usd">USD</div>
+                                    </div>
+                                </div>
+                                <div class="product__menu-text">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                </div>
+                                <div class="product__menu-qty">
+                                    <div class="product__menu-counter card__wrapper">
+                                        <div class="product__menu-control" data-action="minus">
+                                            -</div>
+                                        <div class="product__menu-current" data-counter>1</div>
+                                        <div class="product__menu-control" data-action="plus">+
+                                        </div>
+                                    </div>
+                                    <button data-cart class="product__menu-btn">Add to card</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__menu product__menu-more" data-id="06">
+                            <img class="product__menu-img" src="images/menu/6.jpg" alt="product icon">
+                            <div class="product__menu-item">
+                                <div class="product__menu-box">
+                                    <div class="product__menu-name">Burger Classic</div>
+                                    <div class="product__card">
+                                        <div class="product-span__dollar">$</div>
+                                        <div class="product__menu-price">8.20</div>
+                                        <div class="product-span__usd">USD</div>
+                                    </div>
+                                </div>
+                                <div class="product__menu-text">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                </div>
+                                <div class="product__menu-qty">
+                                    <div class="product__menu-counter card__wrapper">
+                                        <div class="product__menu-control" data-action="minus">
+                                            -</div>
+                                        <div class="product__menu-current" data-counter>1</div>
+                                        <div class="product__menu-control" data-action="plus">+
+                                        </div>
+                                    </div>
+                                    <button data-cart class="product__menu-btn">Add to card</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product__content tab-2">
+                Content Sides
+            </div>
+            <div class="product__content tab-3">
+                Content drinks
+            </div>
+
+            <button class="product__full">See Full Menu</button>
+
+        </div>
+    </section>
+    <section class="order">
+        <div class="container">
+            <div class="order__content">
+                <img class="order__img" src="images/order.jpg" alt="order img">
+                <div class="order__item">
+                    <h2 class="order__title title">Order online with our simple checkout.</h2>
+                    <div class="order__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500.</div>
+                    <button class="order__btn btn">See our FAQ</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about store">
+        <div class="container">
+            <div class="about__content store__content">
+                <div class="about__inner store__inner">
+                    <h2 class="about__inner-title title store__title">Call our store and takeaway when it suits you
+                        best.</h2>
+                    <div class="about__inner-text store__inner-text">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500.
+                    </div>
+                    <a href="tel:+612332333" class="store__link btn">Ph. +61 233 2333</a>
+                </div>
+                <img class="about__content-img store__content-img" src="images/store.png" alt="store img">
+            </div>
+        </div>
+    </section>
+    <section class="buy">
+        <div class="container-buy">
+            <div class="buy__inner">
+                <div class="buy__img">
+                    <img class="buy__food" src="images/food.jpg" alt="food img">
+                </div>
+                <div class="buy__item">
+                    <div class="buy__text">
+                        <span>Support</span> good food and local business.
+                    </div>
+                    <button class="buy__order">Order now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__inner">
+                    <a class="footer__logo logo" href="#">
+                        <img src="images/logo.svg" alt="logo img">
+                    </a>
+                    <div class="footer__text">
+                        Takeaway & Delivery template for small - medium businesses.
+                    </div>
+                </div>
+                <div class="footer__content">
+                    <div class="footer-link">
+                        <button class="footer__item-btn footer__item-btn--company">Company</button>
+                        <ul class="footer__list footer__list-company">
+                            <li class="footer__item">
+                                <a class="footer__item-link" href="#">Home</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__item-link" href="#">Order</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__item-link" href="#">FAQ</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__item-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-link">
+                        <button class="footer__item-btn footer__item-btn--template">template</button>
+                        <ul class="footer__list footer__list-template">
+                            <li class="footer__item">
+                                <a class="footer__item-link" href="#">Style Guide</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__item-link" href="#">Changelog</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__item-link" href="#">Licence</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__item-link" href="#">Webflow University</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-link">
+                        <button class="footer__item-btn footer__item-btn--flowbase">flowbase</button>
+                        <ul class="footer__list footer__list-flowbase">
+                            <a class="footer__item-link" href="#">More Cloneables</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__descr">
+                    <div class="footer__descr-item">Built by <span>Flowbase</span></div>
+                    <div class="footer__descr-item footer__descr-item--power">Powered by <span>Webflow</span></div>
+                </div>
+                <div class="footer__social">
+                    <a class="footer__social-link" href="#">
+                        <img src="images/instagram.svg" alt="instagram icon">
+                    </a>
+                    <a class="footer__social-link" href="#">
+                        <img src="images/twitter.svg" alt="twitter icon">
+                    </a>
+                    <a class="footer__social-link" href="#">
+                        <img src="images/youtube.svg" alt="youtube icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/imask"></script>
+    <script src="js/counter02.js"></script>
+</body>
+
+</html>
